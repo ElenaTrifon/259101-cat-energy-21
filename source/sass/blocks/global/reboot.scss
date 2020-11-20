@@ -1,0 +1,22 @@
+html {
+  box-sizing: border-box;
+}
+
+body {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.28;
+  font-family: $font-oswald;
+  color: $basic-black;
+  background-color: $basic-white;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
