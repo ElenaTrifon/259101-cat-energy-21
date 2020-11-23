@@ -1,0 +1,73 @@
+.description__wrapper {
+  width: 280px;
+}
+
+.description__title {
+  font-size: 36px;
+  line-height: 1.11;
+  padding-top: 30px;
+}
+
+.description__list {
+  @include list-reset;
+  font-family: $font-arial;
+  color: $text-gray;
+  margin-top: 38px;
+  margin-bottom: 42px;
+}
+
+.description__item {
+  margin-top: 20px;
+  margin-left: 80px;
+}
+
+.description__item--first,
+.description__item--second,
+.description__item--third,
+.description__item--fourth {
+  position: relative;
+}
+
+.description__item--first::before {
+  content: "";
+  position: absolute;
+  background-image: url("../../img/description-first.svg");
+  background-repeat: no-repeat;
+  top: -2px;
+  left: -80px;
+  width: 60px;
+  height: 60px;
+}
+
+.description__item--second::before {
+  content: "";
+  position: absolute;
+  background-image: url("../../img/description-second.svg");
+  background-repeat: no-repeat;
+  top: -2px;
+  left: -80px;
+  width: 60px;
+  height: 60px;
+}
+
+.description__item--third::before {
+  content: "";
+  position: absolute;
+  background-image: url("../../img/description-third.svg");
+  background-repeat: no-repeat;
+  top: -2px;
+  left: -80px;
+  width: 60px;
+  height: 60px;
+}
+
+.description__item--fourth::before {
+  content: "";
+  position: absolute;
+  background-image: url("../../img/description-fourth.svg");
+  background-repeat: no-repeat;
+  top: -2px;
+  left: -80px;
+  width: 60px;
+  height: 60px;
+}

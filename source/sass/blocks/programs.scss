@@ -1,0 +1,78 @@
+.programs__wrapper {
+  width: 280px;
+}
+
+.programs__title {
+  font-size: 24px;
+  line-height: 1.54;
+  text-transform: uppercase;
+  padding-top: 30px;
+}
+
+.programs__slim,
+.programs__fat {
+  background-color: $basic-gray;
+}
+
+.programs__title--slim {
+  position: relative;
+  margin-left: 90px;
+  margin-bottom: 18px;
+}
+
+.programs__title--slim::before {
+  content: "";
+  position: absolute;
+  background-image: url("../../img/cat_small.svg");
+  background-repeat: no-repeat;
+  top: 15px;
+  left: -70px;
+  width: 50px;
+  height: 53px;
+}
+
+.programs__title--fat {
+  position: relative;
+  margin-left: 80px;
+}
+
+.programs__title--fat::before {
+  content: "";
+  position: absolute;
+  background-image: url("../../img/cat_big.svg");
+  background-repeat: no-repeat;
+  top: 22px;
+  left: -70px;
+  width: 67px;
+  height: 50px;
+}
+
+.programs__description {
+  font-family: $font-arial;
+  color: $text-gray;
+  margin-top: 29px;
+  margin-left: 20px;
+  margin-right: 33px;
+}
+
+.programs__wrapper a {
+  font-size: 16px;
+  line-height: 1;
+  text-transform: uppercase;
+  position: relative;
+  margin-top: 38px;
+  margin-left: 20px;
+  padding-bottom: 18px;
+  display: block;
+}
+
+.programs__wrapper a::before {
+  content: "";
+  position: absolute;
+  background-image: url("../../img/arrow.svg");
+  background-repeat: no-repeat;
+  width: 32px;
+  height: 10px;
+  top: 1px;
+  right: 130px;
+}

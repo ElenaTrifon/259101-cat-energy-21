@@ -4,14 +4,13 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Кэт энерджи</title>
-  <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body class="page">
   <header class="page-header">
     <a class="page-header__logo" title="Cat Energy">
-      <img src="https://via.placeholder.com/150x150" width="150" height="150" alt="Кэт энерджи">
+      <img src="img/logo.svg" width="150" height="150" alt="Кэт энерджи">
     </a>
     <nav class="main-nav">
       <button class="main-nav__toggle" type="button" aria-label="Открыть/закрыть меню"></button>
@@ -33,9 +32,11 @@
   <main class="page-main">
     <section class="product">
       <div class="product__wrapper wrapper">
-        <h1 class="product__title title">Функциональное питание для котов</h1>
-        <p class="product__slogan">Занялся собой? Займись котом!</p>
-        <div class="product__iamge">
+        <div class="product__background">
+          <h1 class="product__title title">Функциональное питание для котов</h1>
+          <p class="product__slogan">Занялся собой? Займись котом!</p>
+        </div>
+        <div class="product__image">
           <img src="https://via.placeholder.com/150x150" width="150" height="150" alt="Корм Кэт Энерджи">
         </div>
         <a class="product__button button" href="#">Подобрать программу</a>
@@ -45,7 +46,7 @@
       <h2 class="visually-hidden">Программы питания</h2>
       <div class="programs__wrapper wrapper">
         <div class="programs__slim">
-          <h3 class="programs__title">Похудение</h3>
+          <h3 class="programs__title programs__title--slim">Похудение</h3>
           <p class="programs__description">Ваш кот весит больше собаки и
             почти утратил способность лазить
             по деревьям? Пора на диету! Cat
@@ -54,7 +55,7 @@
           <a href="#">Каталог Slim</a>
         </div>
         <div class="programs__fat">
-          <h3 class="programs__title">Набор массы</h3>
+          <h3 class="programs__title programs__title--fat">Набор массы</h3>
           <p class="programs__description">Заработать авторитет среди
             дворовых котов и даже собак?
             Серия Cat Energy Pro поможет
@@ -94,11 +95,11 @@
           спит по 16 часов в день.</p>
         <div class="example__chars example__chars--one">
           <strong class="example__number">5 кг</strong>
-          <span class="example__description">снижение веса</span>
+          <span class="example__description example__description--advantages">снижение веса</span>
         </div>
         <div class="example__chars example__chars--two">
           <strong class="example__number">60 дней</strong>
-          <span class="example__description">затрачено времени</span>
+          <span class="example__description example__description--advantages">затрачено времени</span>
         </div>
         <p class="example__total">Затраты на питание: <span class="example__price">15000 руб.</span></p>
         <div class="example__slider-wrapper">
@@ -119,13 +120,13 @@
       </div>
     </section>
     <section class="map-contacts">
-        <div class="map-contacts__about">
-          <h2 class="map-contacts__title title">Приглашаем к сотрудничеству дилеров!</h2>
-          <address class="map-contacts__adress">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</address>
-        </div>
-        <div class="map-contacts__map">
-          <img src="https://via.placeholder.com/150x150" width="150" height="150" alt="Кэт энерджи">
-        </div>
+      <div class="map-contacts__about">
+        <h2 class="map-contacts__title title">Приглашаем к сотрудничеству дилеров!</h2>
+        <address class="map-contacts__adress">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</address>
+      </div>
+      <div class="map-contacts__map">
+        <img src="https://via.placeholder.com/150x150" width="150" height="150" alt="Кэт энерджи">
+      </div>
     </section>
   </main>
   <footer class="page-footer">
@@ -135,15 +136,15 @@
       </a>
       <ul class="page-footer__social-list social">
         <li class="social__item">
-          <a class="social__link" href="https://vk.com/htmlacademy">Мы в Вконтакте</a>
+          <a class="social__link social__link--vk" href="https://vk.com/htmlacademy" aria-label="Мы в Вконтакте"></a>
         </li>
         <li class="social__item">
-          <a class="social__link" href="https://www.instagram.com/htmlacademy">Мы в
-            Инстаграме</a>
+          <a class="social__link social__link--inst" href="https://www.instagram.com/htmlacademy" aria-label="Мы в
+          Инстаграме"></a>
         </li>
         <li class="social__item">
-          <a class="social__link" href="https://www.facebook.com/htmlacademy">Мы в
-            Фейсбуке</a>
+          <a class="social__link social__link--fb" href="https://www.facebook.com/htmlacademy" aria-label="Мы в
+          Фейсбуке"></a>
         </li>
       </ul>
       <a class="page-footer__copyright copyright" href="https://htmlacademy.ru/intensive/adaptive"><span

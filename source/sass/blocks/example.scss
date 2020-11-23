@@ -1,0 +1,46 @@
+.example {
+  background-color: $dark-gray;
+}
+
+.example__wrapper {
+  width: 280px;
+}
+
+.example__title {
+  font-size: 36px;
+  line-height: 1.11;
+  padding-top: 27px;
+}
+
+.example__description {
+  font-family: $font-arial;
+  color: $text-gray;
+  margin-top: 33px;
+}
+
+.example__number {
+  font-size: 24px;
+  line-height: 1;
+  text-transform: uppercase;
+}
+
+.example__description--advantages {
+  font-size: 12px;
+  line-height: 1;
+}
+
+.example__total {
+  font-size: 14px;
+  line-height: 1.42;
+  text-transform: uppercase;
+}
+
+.example__slider-nav {
+  padding-bottom: 25px;
+}
+
+.example__controls {
+  font-size: 16px;
+  line-height: 1.25;
+  text-transform: uppercase;
+}
