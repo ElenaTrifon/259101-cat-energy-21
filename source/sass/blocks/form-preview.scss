@@ -1,0 +1,80 @@
+.form-border {
+  border: none;
+}
+
+.form__info {
+  width: 280px;
+  margin-top: 39px;
+}
+
+.form__label {
+  font-size: 16px;
+  line-height: 1.12;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: $text-gray;
+}
+
+.form__input {
+  font-size: 16px;
+  line-height: 1.12;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: $text-gray;
+  border: 1px solid $border-gray;
+  height: 45px;
+}
+
+.form__program {
+  width: 280px;
+}
+
+.form__label-radio {
+  color: $text-dark-gray;
+}
+
+.legend {
+  font-size: 24px;
+  line-height: 1.08;
+  font-weight: 400;
+}
+
+.form__contacts {
+  margin-top: 26px;
+}
+
+.form__contacts-wrapper {
+  width: 280px;
+}
+
+.form__comments {
+  margin-top: 27px;
+}
+
+.form__comments-text {
+  font-family: $font-oswald;
+  font-size: 16px;
+  line-height: 1.12;
+  color: $text-gray;
+  text-transform: uppercase;
+  width: 280px;
+  border: 1px solid $border-gray;
+  padding-top: 13px;
+  padding-left: 15px;
+}
+
+.form__more {
+  margin-top: 27px;
+}
+
+.form__send-button {
+  border: none;
+}
+
+.form__send-field {
+  font-family: $font-arial;
+  font-size: 14px;
+  line-height: 1.14;
+  font-weight: 400;
+  text-align: center;
+}
