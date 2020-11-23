@@ -18,17 +18,21 @@
 .product__title {
   font-size: 36px;
   line-height: 1;
+  font-weight: 400;
   color: $basic-white;
   position: relative;
   z-index: 1;
+  text-align: center;
+  padding-top: 27px;
 }
 
 .product__slogan {
   font-size: 14px;
   line-height: 1;
   text-transform: uppercase;
+  font-weight: 400;
   color: $basic-white;
   position: relative;
   z-index: 1;
+  text-align: center;
 }
-

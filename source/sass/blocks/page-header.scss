@@ -1,3 +1,21 @@
 .main-nav__list {
   @include list-reset;
+  font-size: 20px;
+  line-height: 1;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.main-nav__item {
+  text-align: center;
+}
+
+.main-nav__toggle {
+  border: none;
+  padding: 0;
+  background: none;
+  background-image: url("../../img/nav-toggle.svg");
+  background-repeat: no-repeat;
+  width: 24px;
+  height: 18px;
 }
