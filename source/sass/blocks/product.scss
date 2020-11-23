@@ -1,0 +1,38 @@
+.product__background {
+  background-image: url("../../img/index-background.jpg");
+  width: 320px;
+  height: 302px;
+  position: relative;
+}
+
+.product__background::after {
+  content: "";
+  position: absolute;
+  background: $green-background;
+  width: 320px;
+  height: 302px;
+  top: 0;
+  z-index: 0;
+}
+
+.product__title {
+  font-size: 36px;
+  line-height: 1;
+  font-weight: 400;
+  color: $basic-white;
+  position: relative;
+  z-index: 1;
+  text-align: center;
+  padding-top: 27px;
+}
+
+.product__slogan {
+  font-size: 14px;
+  line-height: 1;
+  text-transform: uppercase;
+  font-weight: 400;
+  color: $basic-white;
+  position: relative;
+  z-index: 1;
+  text-align: center;
+}
