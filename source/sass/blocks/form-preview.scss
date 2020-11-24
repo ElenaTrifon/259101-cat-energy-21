@@ -16,6 +16,7 @@
 }
 
 .form__input {
+  font-family: $font-oswald;
   font-size: 16px;
   line-height: 1.12;
   font-weight: 400;
@@ -23,6 +24,18 @@
   color: $text-gray;
   border: 1px solid $border-gray;
   height: 45px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.form__input:focus {
+  outline: 0;
+}
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  appearance: none;
+  margin: 0;
 }
 
 .form__program {
@@ -52,15 +65,10 @@
 }
 
 .form__comments-text {
-  font-family: $font-oswald;
-  font-size: 16px;
-  line-height: 1.12;
-  color: $text-gray;
-  text-transform: uppercase;
   width: 280px;
-  border: 1px solid $border-gray;
+  min-height: 150px;
   padding-top: 13px;
-  padding-left: 15px;
+  resize: none;
 }
 
 .form__more {
@@ -69,6 +77,11 @@
 
 .form__send-button {
   border: none;
+  cursor: pointer;
+}
+
+.form__send-button:focus {
+  outline: 0;
 }
 
 .form__send-field {
