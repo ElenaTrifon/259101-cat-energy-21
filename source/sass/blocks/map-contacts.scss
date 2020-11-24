@@ -1,5 +1,6 @@
 .map-contacts__about {
   width: 280px;
+  padding-top: 28px;
 }
 
 .map-contacts__title {
@@ -18,4 +19,8 @@
 
 .map-contacts__map {
   margin-top: 22px;
+}
+
+.map-contacts--form {
+  background-color: $basic-gray;
 }
