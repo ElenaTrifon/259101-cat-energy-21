@@ -38,22 +38,24 @@
       <h2 class="visually-hidden">Форма ввода данных</h2>
       <form class="form" action="https://echo.htmlacademy.ru" method="post" target="_blank">
         <div class="form__data">
-          <fieldset class="form__info form-border">
+          <fieldset class="form__info form-border wrapper">
             <legend class="visually-hidden">Информация о коте</legend>
             <p class="form__info-item">
               <label class="form__info-label form__label" for="login-cat">Имя:<sup>*</sup></label>
-              <input class="form__info-input form__input" id="login-cat" type="text" name="name" placeholder="Барсик" required>
+              <input class="form__info-input form__input" id="login-cat" type="text" name="name" placeholder="Барсик"
+                required>
             </p>
             <p class="form__info-item">
               <label class="form__info-label form__label" for="weight-cat">Вес (кг):<sup>*</sup></label>
-              <input class="form__info-input form__input" id="weight-cat" type="number" name="weight" placeholder="7" required>
+              <input class="form__info-input form__input" id="weight-cat" type="number" name="weight" placeholder="7"
+                required>
             </p>
             <p class="form__info-item">
               <label class="form__info-label form__label" for="years-cat">Возраст (лет):</label>
               <input class="form__info-input form__input" id="years-cat" type="number" name="years" placeholder="7">
             </p>
           </fieldset>
-          <fieldset class="form__program form-border">
+          <fieldset class="form__program form-border wrapper">
             <legend class="visually-hidden">Выбор программы питания</legend>
             <p class="form__program-item">
               <input class="form__input-radio" type="radio" name="program" value="pgogram-slim" id="figure-slim"
@@ -72,22 +74,22 @@
         </div>
         <fieldset class="form__contacts form-border">
           <legend class="form__contacts-legend legend">Контактные данные (владельца кота)</legend>
-          <div class="form__contacts-wrapper">
+          <div class="form__contacts-wrapper wrapper">
             <p class="form__contacts-item">
               <label class="form__contacts-label form__label" for="login-email">E-mail:<sup>*</sup></label>
-              <input class="form__contacts-input--email form__input" id="login-email" type="email" name="email" placeholder="kuklachev@gmail.com"
-                required>
+              <input class="form__contacts-input--email form__input" id="login-email" type="email" name="email"
+                placeholder="kuklachev@gmail.com" required>
             </p>
             <p class="form__contacts-item">
               <label class="form__contacts-label form__label" for="login-phone">Телефон:<sup>*</sup></label>
-              <input class="form__contacts-input--phone form__input" id="login-phone" type="number" name="phone" placeholder="8(960)900-60-90"
-                required>
+              <input class="form__contacts-input--phone form__input" id="login-phone" type="number" name="phone"
+                placeholder="8(960)900-60-90" required>
             </p>
           </div>
         </fieldset>
         <fieldset class="form__comments form-border">
           <legend class="form__comments-legend legend">Комментарий</legend>
-          <p class="form__comments-item">
+          <p class="form__comments-item wrapper">
             <label class="visually-hidden" for="user-comment">Комментарий</label>
             <textarea class="form__comments-text form__input" id="user-comment" type="text"
               rows="5">Расскажите обо всех повадках кота</textarea>
@@ -95,22 +97,24 @@
         </fieldset>
         <fieldset class="form__more form-border">
           <legend class="form__more-legend legend">Дополнительно</legend>
-          <p class="form__more-item">
-            <input class="form__more-label" type="checkbox" name="sweetener" id="check-sweetener" checked>
-            <label class="form__more-input form__label" for="check-sweetener">Сахарозаменитель</label>
-          </p>
-          <p class="form__more-item">
-            <input class="form__more-label" type="checkbox" name="water" id="check-water">
-            <label class="form__more-input form__label" for="check-water">Питьевая вода</label>
-          </p>
-          <p class="form__more-item">
-            <input class="form__more-label" type="checkbox" name="milk" id="check-milk">
-            <label class="form__more-input form__label" for="check-milk">Молоко</label>
-          </p>
-          <p class="form__more-item">
-            <input class="form__more-label" type="checkbox" name="vitamins" id="check-vitamins">
-            <label class="form__more-input form__label" for="check-vitamins">Витамины</label>
-          </p>
+          <div class="form__more-wrapper wrapper">
+            <p class="form__more-item">
+              <input class="form__more-label" type="checkbox" name="sweetener" id="check-sweetener" checked>
+              <label class="form__more-input form__label" for="check-sweetener">Сахарозаменитель</label>
+            </p>
+            <p class="form__more-item">
+              <input class="form__more-label" type="checkbox" name="water" id="check-water">
+              <label class="form__more-input form__label" for="check-water">Питьевая вода</label>
+            </p>
+            <p class="form__more-item">
+              <input class="form__more-label" type="checkbox" name="milk" id="check-milk">
+              <label class="form__more-input form__label" for="check-milk">Молоко</label>
+            </p>
+            <p class="form__more-item">
+              <input class="form__more-label" type="checkbox" name="vitamins" id="check-vitamins">
+              <label class="form__more-input form__label" for="check-vitamins">Витамины</label>
+            </p>
+          </div>
         </fieldset>
         <div class="form__send">
           <button class="form__send-button button" type="submit">Отправить</button>
@@ -121,7 +125,7 @@
     <section class="map-contacts map-contacts--form">
       <div class="map-contacts__about">
         <h2 class="map-contacts__title title">Приглашаем к сотрудничеству дилеров!</h2>
-        <address class="map-contacts__adress">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</address>
+        <address class="map-contacts__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</address>
       </div>
       <div class="map-contacts__map">
         <img src="img/location.jpg" width="320px" height="362px" alt="Карта">
@@ -147,8 +151,8 @@
         </li>
       </ul>
       <a class="page-footer__copyright copyright" href="https://htmlacademy.ru/intensive/adaptive"><span
-          class="copyright__link">HTML Academy</span><img src="img/footer-logo-html.svg" width="27px"
-          height="34px" alt="HTML Academy"></a>
+          class="copyright__link">HTML Academy</span><img src="img/footer-logo-html.svg" width="27px" height="34px"
+          alt="HTML Academy"></a>
     </div>
   </footer>
 </body>

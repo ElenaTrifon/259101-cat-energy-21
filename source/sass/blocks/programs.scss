@@ -1,7 +1,3 @@
-.programs__wrapper {
-  width: 280px;
-}
-
 .programs__title {
   font-size: 24px;
   line-height: 1.54;
@@ -56,7 +52,7 @@
   margin-right: 33px;
 }
 
-.programs__wrapper a {
+.programs__catalog {
   font-size: 16px;
   line-height: 1;
   text-transform: uppercase;
@@ -65,15 +61,31 @@
   margin-left: 20px;
   padding-bottom: 18px;
   display: block;
+
+  &:hover::before {
+    content: "";
+    position: absolute;
+    background-image: url("../../img/arrow-big.svg");
+    background-repeat: no-repeat;
+    width: 32px;
+    height: 11px;
+    top: 1px;
+    right: 124px;
+  }
+
+  &:active {
+    opacity: 0.3;
+    transition: $default-transition;
+  }
 }
 
-.programs__wrapper a::before {
+.programs__catalog::before {
   content: "";
   position: absolute;
   background-image: url("../../img/arrow.svg");
   background-repeat: no-repeat;
-  width: 32px;
-  height: 10px;
+  width: 24px;
+  height: 11px;
   top: 1px;
   right: 130px;
 }

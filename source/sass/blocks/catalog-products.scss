@@ -1,5 +1,5 @@
-.catalog {
-  width: 280px;
+.page__title-catalog {
+  margin-left: 20px;
 }
 
 .catalog__list {
@@ -53,14 +53,17 @@
   background-color: $basic-gray;
   color: $text-gray;
   margin-top: 21px;
-}
+  transition: $default-transition;
 
-.showmore__button:hover {
-  background-color: $basic-gray;
-  color: $text-gray;
-}
+  &:hover {
+    background-color: $basic-gray;
+    color: $text-gray;
+    transition: $default-transition;
+  }
 
-.showmore__button:active {
-  background-color: $basic-gray;
-  color: $active-gray;
+  &:active {
+    background-color: $basic-gray;
+    color: $active-gray;
+    transition: $default-transition;
+  }
 }

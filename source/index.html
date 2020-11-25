@@ -3,17 +3,20 @@
 
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HTML Academy: Кэт энерджи</title>
   <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body class="page">
   <header class="page-header">
-    <a class="page-header__logo" title="Cat Energy">
-      <img src="img/logo-2.svg" width="191px" height="38px" alt="Кэт энерджи">
-    </a>
+    <div class="page-header__wrapper wrapper">
+      <a class="page-header__logo" title="Cat Energy">
+        <img src="img/logo-2.svg" width="191px" height="38px" alt="Кэт энерджи">
+      </a>
+      <button class="page-header__toggle" type="button" aria-label="Открыть/закрыть меню"></button>
+    </div>
     <nav class="main-nav">
-      <button class="main-nav__toggle" type="button" aria-label="Открыть/закрыть меню"></button>
       <div class="main-nav__wrapper">
         <ul class="main-nav__list">
           <li class="main-nav__item main-nav__item--active">
@@ -31,11 +34,11 @@
   </header>
   <main class="page-main">
     <section class="product">
+      <div class="product__background">
+        <h1 class="product__title page__title title">Функциональное питание для котов</h1>
+        <p class="product__slogan">Занялся собой? Займись котом!</p>
+      </div>
       <div class="product__wrapper wrapper">
-        <div class="product__background">
-          <h1 class="product__title page__title title">Функциональное питание для котов</h1>
-          <p class="product__slogan">Занялся собой? Займись котом!</p>
-        </div>
         <div class="product__image">
           <img src="img/product_image.png" width="280px" height="270px" alt="Корм Кэт Энерджи">
         </div>
@@ -52,7 +55,7 @@
             по деревьям? Пора на диету! Cat
             Energy Slim поможет вашему
             питомцу сбросить лишний вес.</p>
-          <a href="#">Каталог Slim</a>
+          <a class="programs__catalog" href="#">Каталог Slim</a>
         </div>
         <div class="programs__fat">
           <h3 class="programs__title programs__title--fat">Набор массы</h3>
@@ -61,7 +64,7 @@
             Серия Cat Energy Pro поможет
             вашему коту нарастить
             необходимые мышцы!</p>
-          <a href="#">Каталог Pro</a>
+          <a class="programs__catalog" href="#">Каталог Pro</a>
         </div>
       </div>
     </section>
@@ -95,11 +98,11 @@
           спит по 16 часов в день.</p>
         <div class="example__chars example__chars--one">
           <strong class="example__number">5 кг</strong>
-          <span class="example__description example__description--advantages">снижение веса</span>
+          <span class="example__description">снижение веса</span>
         </div>
         <div class="example__chars example__chars--two">
           <strong class="example__number">60 дней</strong>
-          <span class="example__description example__description--advantages">затрачено времени</span>
+          <span class="example__description">затрачено времени</span>
         </div>
         <p class="example__total">Затраты на питание: <span class="example__price">15000 руб.</span></p>
         <div class="example__slider-wrapper">
@@ -122,7 +125,7 @@
     <section class="map-contacts">
       <div class="map-contacts__about">
         <h2 class="map-contacts__title title">Приглашаем к сотрудничеству дилеров!</h2>
-        <address class="map-contacts__adress">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</address>
+        <address class="map-contacts__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</address>
       </div>
       <div class="map-contacts__map">
         <img src="img/location.jpg" width="320px" height="362px" alt="Карта">
@@ -148,8 +151,8 @@
         </li>
       </ul>
       <a class="page-footer__copyright copyright" href="https://htmlacademy.ru/intensive/adaptive"><span
-          class="copyright__link">HTML Academy</span><img src="img/footer-logo-html.svg" width="27px"
-          height="34px" alt="HTML Academy"></a>
+          class="copyright__link">HTML Academy</span><img src="img/footer-logo-html.svg" width="27px" height="34px"
+          alt="HTML Academy"></a>
     </div>
   </footer>
 </body>

@@ -1,9 +1,10 @@
 // Начните писать стили здесь
+@import "global/fonts.scss";
 @import "variables.scss";
 @import "mixins.scss";
-@import "global/fonts.scss";
 @import "global/reboot.scss";
 @import "global/normalize.css";
+@import "blocks/blocks.scss";
 @import "blocks/page.scss";
 @import "blocks/page-header.scss";
 @import "blocks/product.scss";

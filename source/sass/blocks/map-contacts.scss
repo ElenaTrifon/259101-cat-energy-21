@@ -1,5 +1,6 @@
 .map-contacts__about {
   width: 280px;
+  margin: 0 auto;
   padding-top: 28px;
 }
 
@@ -10,7 +11,7 @@
   text-transform: uppercase;
 }
 
-.map-contacts__adress {
+.map-contacts__address {
   font-family: $font-arial;
   color: $text-gray;
   font-style: normal;

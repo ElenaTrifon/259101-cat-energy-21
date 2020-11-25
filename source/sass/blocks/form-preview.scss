@@ -3,7 +3,6 @@
 }
 
 .form__info {
-  width: 280px;
   margin-top: 39px;
 }
 
@@ -38,10 +37,6 @@ input[type="number"]::-webkit-inner-spin-button {
   margin: 0;
 }
 
-.form__program {
-  width: 280px;
-}
-
 .form__label-radio {
   color: $text-dark-gray;
 }
@@ -56,16 +51,12 @@ input[type="number"]::-webkit-inner-spin-button {
   margin-top: 26px;
 }
 
-.form__contacts-wrapper {
-  width: 280px;
-}
-
 .form__comments {
   margin-top: 27px;
 }
 
 .form__comments-text {
-  width: 280px;
+  min-width: 280px;
   min-height: 150px;
   padding-top: 13px;
   resize: none;
@@ -75,19 +66,24 @@ input[type="number"]::-webkit-inner-spin-button {
   margin-top: 27px;
 }
 
-.form__send-button {
-  border: none;
-  cursor: pointer;
-}
+.form__send {
+  width: 280px;
+  margin: 0 auto;
 
-.form__send-button:focus {
-  outline: 0;
-}
+  .form__send-button {
+    border: none;
+    cursor: pointer;
 
-.form__send-field {
-  font-family: $font-arial;
-  font-size: 14px;
-  line-height: 1.14;
-  font-weight: 400;
-  text-align: center;
+    &:focus {
+      outline: 0;
+    }
+  }
+
+  .form__send-field {
+    font-family: $font-arial;
+    font-size: 14px;
+    line-height: 1.14;
+    font-weight: 400;
+    text-align: center;
+  }
 }
