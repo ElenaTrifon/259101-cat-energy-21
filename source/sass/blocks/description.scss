@@ -1,7 +1,19 @@
+.description {
+  outline: 5px solid rgba(255, 0, 0, 0.8);
+  outline-offset: -5px;
+
+  .description__wrapper {
+    outline: 5px solid rgba(0, 26, 255, 0.8);
+    outline-offset: -5px;
+  }
+}
+
 .description__title {
   font-size: 36px;
   line-height: 1.11;
   padding-top: 30px;
+  outline: 5px solid rgba(0, 255, 34, 0.8);
+  outline-offset: -5px;
 }
 
 .description__list {
@@ -10,12 +22,31 @@
   color: $text-gray;
   margin-top: 38px;
   margin-bottom: 42px;
+  outline: 5px solid rgba(255, 0, 212, 0.8);
+  outline-offset: -5px;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+  }
 }
 
 .description__item {
   margin-top: 20px;
   margin-left: 80px;
   position: relative;
+  outline: 5px solid rgba(56, 55, 56, 0.8);
+  outline-offset: -5px;
+
+  @media (min-width: $tablet-width) {
+    max-width: 230px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 0;
+  }
 }
 
 .description__item--first::before {

@@ -1,17 +1,33 @@
 .example {
   background-color: $dark-gray;
+  outline: 5px solid rgba(255, 0, 0, 0.8);
+  outline-offset: -5px;
+
+  .example__wrapper {
+    outline: 5px solid rgba(0, 60, 255, 0.8);
+    outline-offset: -5px;
+  }
 }
 
 .example__title {
   font-size: 36px;
   line-height: 1.11;
   padding-top: 27px;
+  outline: 5px solid rgba(0, 198, 224, 0.8);
+  outline-offset: -5px;
 }
 
 .example__description {
   font-family: $font-arial;
   color: $text-gray;
   margin-top: 33px;
+  outline: 5px solid rgba(235, 199, 0, 0.8);
+  outline-offset: -5px;
+}
+
+.example__chars {
+  outline: 5px solid rgba(0, 90, 35, 0.8);
+  outline-offset: -5px;
 }
 
 .example__number {
@@ -21,24 +37,44 @@
   font-weight: 400;
 }
 
-.example__description--advantages {
-  font-size: 12px;
-  line-height: 1;
-}
-
 .example__total {
   font-size: 14px;
   line-height: 1.42;
   text-transform: uppercase;
 }
 
-.example__slider-nav {
-  padding-bottom: 25px;
+.example__slider-wrapper {
+  outline: 5px solid rgba(2, 0, 90, 0.8);
+  outline-offset: -5px;
+
+  .example__slide {
+    outline: 5px solid rgba(255, 230, 0, 0.8);
+    outline-offset: -5px;
+    margin: 0 auto;
+  }
+
+  .example__slide-after {
+    background-image: url("../../img/cat-after.png");
+    background-repeat: no-repeat;
+    width: 311px;
+    height: 232px;
+  }
+
+  .example__slide-before {
+    background-image: url("../../img/cat-before.png");
+    background-repeat: no-repeat;
+    width: 311px;
+    height: 231px;
+  }
 }
 
-.example__controls {
-  font-size: 16px;
-  line-height: 1.25;
-  text-transform: uppercase;
-  font-weight: 400;
+.example__slider-nav {
+  padding-bottom: 25px;
+
+  .example__controls {
+    font-size: 16px;
+    line-height: 1.25;
+    text-transform: uppercase;
+    font-weight: 400;
+  }
 }

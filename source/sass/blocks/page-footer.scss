@@ -1,19 +1,34 @@
 .page-footer {
   background-color: $basic-gray;
+  outline: 5px solid rgba(252, 0, 0, 0.8);
+  outline-offset: -5px;
 }
 
 .page-footer__wrapper {
   padding-bottom: 22px;
+  outline: 5px solid rgba(0, 17, 252, 0.8);
+  outline-offset: -5px;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
 }
 
 .page-footer__logo {
   display: block;
   padding-top: 39px;
+  outline: 5px solid rgba(0, 214, 252, 0.8);
+  outline-offset: -5px;
 }
 
 .page-footer__social-list {
   @include list-reset;
   margin-top: 23px;
+  outline: 5px solid rgba(217, 255, 0, 1);
+  outline-offset: -5px;
 }
 
 .social__link--vk,
@@ -58,6 +73,8 @@
 .page-footer__copyright {
   display: block;
   margin-top: 49px;
+  outline: 5px solid rgba(6, 7, 27, 0.8);
+  outline-offset: -5px;
 }
 
 .copyright__link {

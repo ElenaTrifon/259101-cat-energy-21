@@ -1,14 +1,42 @@
+.programs {
+  outline: 5px solid rgba(255, 0, 0, 0.8);
+  outline-offset: -5px;
+}
+
+.programs__wrapper {
+  outline: 5px solid rgba(0, 255, 255, 0.8);
+  outline-offset: -5px;
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
 .programs__title {
   font-size: 24px;
   line-height: 1.54;
   text-transform: uppercase;
   padding-top: 30px;
   font-weight: 400;
+  outline: 5px solid rgba(229, 255, 0, 0.8);
+  outline-offset: -5px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 36px;
+    line-height: 1;
+    text-transform: uppercase;
+    padding-top: 77px;
+    font-weight: 400;
+  }
 }
 
 .programs__slim,
 .programs__fat {
   background-color: $basic-gray;
+  outline: 5px solid rgba(212, 136, 136, 0.8);
+  outline-offset: -5px;
 }
 
 .programs__title--slim {
@@ -50,6 +78,8 @@
   margin-top: 29px;
   margin-left: 20px;
   margin-right: 33px;
+  outline: 5px solid rgba(136, 212, 146, 0.8);
+  outline-offset: -5px;
 }
 
 .programs__catalog {
@@ -61,6 +91,8 @@
   margin-left: 20px;
   padding-bottom: 18px;
   display: block;
+  outline: 5px solid rgba(199, 136, 212, 0.8);
+  outline-offset: -5px;
 
   &:hover::before {
     content: "";

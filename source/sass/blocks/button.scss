@@ -19,4 +19,10 @@
     color: $white-active;
     transition: $default-transition;
   }
+
+  @media (min-width: $tablet-width) {
+    min-width: 244px;
+    padding-top: 14px;
+    padding-bottom: 14px;
+  }
 }
